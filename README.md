@@ -10,6 +10,6 @@ Este es el segundo intento
 * Trucos muy locos del profesor
 * Las personalidades multiples de Fredy
 * Creado por el increible equipo de platzi
-
+* Incluye ejemplo en window, linux y mac
 
 Y como un amable recordatorio : ** Este es un readme.md es un chiste ** : Diseñado para el ejemplo.
