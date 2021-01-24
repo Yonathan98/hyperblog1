@@ -11,5 +11,7 @@ Este es el segundo intento
 * Las personalidades multiples de Fredy
 * Creado por el increible equipo de platzi
 
+* Incluye ejemplo en window, linux y mac
+* Disponible en todas las edades
 
 Y como un amable recordatorio : ** Este es un readme.md es un chiste ** : Diseñado para el ejemplo.
