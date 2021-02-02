@@ -7,9 +7,7 @@ Este es el segundo intento
 * Todos los comandos de git
 * El flujo de trabajo en github
 * El verdadero amor por las buenas practicas
-* Trucos muy locos del profesor
-* Las personalidades multiples de Fredy
-* Creado por el increible equipo de platzi
+
 
 * Incluye ejemplo en window, linux y mac
 * Disponible en todas las edades
