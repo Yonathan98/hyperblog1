@@ -1,0 +1,6 @@
+<?php
+    classPayment
+    {
+        public $id;
+    }
+?>
