@@ -1,7 +1,8 @@
 from car import Car #Traer la clase
+from uberX import UberX
 from account import Account
 if __name__ == "__main__":
     print ("hola mundo")
-    car = Car("Ams234", Account ("Andres Herrera", "ANDA876"))
-    print(vars(car)) #Traer todos los atributos de car al main
-    print(vars(car.driver))
+    uberX = UberX("Ams234", Account ("Andres Herrera", "ANDA876"), "Chevrolet", "Sonic")
+    print(vars(uberX)) #Traer todos los atributos de alguna clase al main
+    print(vars(uberX.driver))
