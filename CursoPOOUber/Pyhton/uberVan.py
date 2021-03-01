@@ -5,6 +5,6 @@ class UberBlack(Car):
     seatsMaterial = []
 
     def __init__(self, license, driver, typeCarAccepted, seatsMaterial):
-        super.__init__(license,driver) #Linea de la herenciade car.py
+        super().__init__(license,driver) #Linea de la herenciade car.py
         self.typeCarAccepted= typeCarAccepted #Atributos de la clase uberpool
         self.seatsMaterial= seatsMaterial
