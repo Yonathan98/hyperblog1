@@ -1,20 +1,27 @@
-def busqueda_binaria (objetivo):
-    epsilon = 0.01 #Aproximacion que se quiere llegar 
-    bajo = 0.0
-    alto = max(1.0, objetivo) #funcion que entrega el maximo numero
-    respuesta = (alto + bajo) / 2
-  
-    if abs(respuesta**2 - objetivo) >= epsilon:
-        print (f'bajo = {bajo}, alto= {alto}, respuesta= {respuesta}')
-        if respuesta **2 < objetivo:
-            bajo = respuesta
-        else:
-            alto = respuesta
-            respuesta = (alto + bajo) / 2
-    print(f'La raiz cuadrada del objetivo es la {respuesta}')
+import random
+def busqueda_binaria(lista, comienzo, final, objetivo, iteraciones=0):
+    print(f'Buscando {objetivo} entre {lista[comienzo]} y {lista[final-1]}') #la busqueda que esta realizando
+    iteraciones += 1 
+    if comienzo > final:
+        return (False, iteraciones)
+    medio= (comienzo + final) // 2 #division de enteros
 
-def run():
-    objetivo = int(input("Escoge un número: "))
-    busqueda_binaria (objetivo)
-if __name__ == '__main__':
-    run()   
+    if lista[medio] == objetivo :
+        return (True, iteraciones)
+    elif lista [medio] < objetivo:
+        return busqueda_binaria(lista, medio + 1, final, objetivo, iteraciones=iteraciones) #busca en la lista hacia el final
+    else:
+        return busqueda_binaria(lista, comienzo, medio -1, objetivo, iteraciones=iteraciones) #busca en la lista hacia el principio
+    
+if __name__ == "__main__":
+    tamano_de_lista = int(input("De que tamaño sera la lista? "))
+    objetivo = int(input("Que numero quieres encontrar? "))
+
+    lista = sorted([random.randint(0,100) for i in range (tamano_de_lista)]) #ordenar la lista
+    
+    
+    (encontrado, iteraciones) = busqueda_binaria(lista,0,len(lista), objetivo)
+    print(lista)
+    print(f'El elemento {objetivo} {"esta" if encontrado else "no esta"} en la lista')
+    print(f'Iteraciones busqueda binaria: {iteraciones}')
+    
